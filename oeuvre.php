@@ -14,7 +14,12 @@
 <main>
     <article id="detail-oeuvre">
         <div id="img-oeuvre">
-
+            <?php
+            $id = $_GET['id']; // Récupération de l'identifiant depuis l'URL
+            $oeuvre = $oeuvres[$id - 1]; // Recherche de l'oeuvre correspondant à l'identifiant
+            // Affichage de l'image de l'oeuvre
+            echo '<img src="' . $oeuvre['image'] . '" alt="' . $oeuvre['titre'] . '">';
+            ?>
         </div>
         <div id="contenu-oeuvre">
             <!-- Affiche le titre de l'oeuvre. -->
