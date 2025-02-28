@@ -34,3 +34,5 @@
 <?php include('footer.php'); ?>
 </body>
 </html>
+<?php include('header.php'); ?>
+<?php include('oeuvres.php'); ?>
